@@ -1,3 +1,6 @@
+#This will tell me whether I have created the function correctly and if I have the correct mRNA output.
+
+
 from transcribe import dna_to_rna
 
 
@@ -10,7 +13,7 @@ def test_dna_to_rna(input, output):
         print('Test failed.')
         print('Incorrect mRNA: ' + rna)
 
-
+#reads input from .txt file line byline
 def run_tests():
     f = open('dna.txt')
     dna1 = f.readline().rstrip('\n')
